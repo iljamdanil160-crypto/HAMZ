@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZQ MOD - Key Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 ZQ MOD</h1>
+            <h2>Mobile Legends Key Generator</h2>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('generator')">🔑 Generate Key</button>
+            <button class="tab-btn" onclick="showTab('verify')">✅ Verify Key</button>
+            <button class="tab-btn" onclick="showTab('settings')">⚙️ Settings</button>
+        </div>
+
+        <!-- Generator Tab -->
+        <div id="generator" class="tab-content active">
+            <div class="form-group">
+                <label for="username">👤 Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" maxlength="20">
+            </div>
+            
+            <button id="generateBtn" onclick="generateKey()">🚀 Generate Key</button>
+            
+            <div id="result" class="result"></div>
+        </div>
+
+        <!-- Verify Tab -->
+        <div id="verify" class="tab-content">
+            <div class="form-group">
+                <label for="verifyKey">🔑 Enter Key to Verify:</label>
+                <input type="text" id="verifyKey" placeholder="Enter your key">
+            </div>
+            
+            <button onclick="verifyKey()">✅ Verify Key</button>
+            
+            <div id="verifyResult" class="result"></div>
+        </div>
+
+        <!-- Settings Tab -->
+        <div id="settings" class="tab-content">
+            <h3>⚙️ Settings & Tools</h3>
+            
+            <div class="settings-section">
+                <h4>📊 Statistics</h4>
+                <p>Total Keys Generated: <span id="totalKeys">0</span></p>
+                <p>Active Keys: <span id="activeKeys">0</span></p>
+            </div>
+            
+            <div class="settings-section">
+                <h4>🔧 Tools</h4>
+                <button onclick="downloadKeysFile()">📥 Download Keys Database</button>
+                <button onclick="clearAllKeys()">🗑️ Clear All Keys</button>
+            </div>
+            
+            <div class="settings-section">
+                <h4>📱 How to Use</h4>
+                <ol>
+                    <li>Generate your key on this website</li>
+                    <li>Copy the generated key</li>
+                    <li>Open ZQ MOD in Mobile Legends</li>
+                    <li>Paste your key and login</li>
+                    <li>Enjoy the features!</li>
+                </ol>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 ZQ MOD - Mobile Legends Enhancement</p>
+            <p>🔗 <a href="https://github.com/iljamdanil160-crypto/HAMZ" target="_blank">GitHub Repository</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
