@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h1><i class="fas fa-tasks"></i> Todo App</h1>
+                <p>Kelola todo list Anda dengan mudah</p>
+            </div>
+
+            <div class="auth-forms">
+                <!-- Login Form -->
+                <div id="login-form" class="auth-form active">
+                    <h2>Login</h2>
+                    <form onsubmit="handleLogin(event)">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="login-username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                    </form>
+                    <p class="auth-switch">
+                        Belum punya akun? 
+                        <a href="#" onclick="showRegister()">Daftar di sini</a>
+                    </p>
+                </div>
+
+                <!-- Register Form -->
+                <div id="register-form" class="auth-form">
+                    <h2>Register</h2>
+                    <form onsubmit="handleRegister(event)">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="register-username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="register-email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="register-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-user-plus"></i> Register
+                        </button>
+                    </form>
+                    <p class="auth-switch">
+                        Sudah punya akun? 
+                        <a href="#" onclick="showLogin()">Login di sini</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="demo-info">
+                <h3>Demo Credentials:</h3>
+                <p><strong>Username:</strong> demo<br>
+                <strong>Password:</strong> demo123</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
